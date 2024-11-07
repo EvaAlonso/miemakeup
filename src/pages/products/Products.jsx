@@ -1,8 +1,9 @@
 
-import { useEffect } from "react";
-import { useState } from "react";
-import { getAllProducts } from "../../services/ApiProductsService";
+import { useEffect, useState } from "react";
+import { deleteProduct, getAllProducts } from "../../services/ApiProductsService";
 import { Link } from "react-router-dom";
+import trash from "../../assets/papelera.png";
+import pencil from "../../assets/editar.png";
 
 const Products = () => {
 
@@ -15,7 +16,7 @@ const Products = () => {
 
   useEffect(()=>{
 
-    getAllProductsFromService()
+    getAllProductsFromService();
 
   }, []);
 
@@ -24,13 +25,25 @@ const Products = () => {
       <Link to={"/create-product"}>
       <button>Añadir producto</button>
       </Link>
+      
             <div className="container-products">
                 {
                     products.map((product) => (
-                        <div className="container-product" key={product.id}>
+                      <div key={product.id}>
+                      <Link to={"/delete-product"} onClick={deleteProduct} >
+                      <img src={trash} alt="icono papelera" />
+                      </Link>
+                      <Link to={`/update-product/${product.id}`} >
+                      <img src={pencil} alt="icono editar" />
+                      </Link>
+                        <div className="container-product" >
                             <h3>{product.title}</h3>
+                            <img src={product.imageUrl} alt="" width="300"/>
                             <p>{product.price}</p>
-                            <img src={product.imageUrl} alt="" />
+                            <p>{product.description}</p>
+                            
+                            
+                        </div>
                         </div>
                     ))
                 }

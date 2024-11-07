@@ -12,7 +12,19 @@ const createProduct = async (newProduct) => {
     return response.data;
 }
 
+const updateProduct = async (uProduct) => {
+    const response = await axios.post(apiProductsUrl, uProduct);
+    return response.data;
+}
+
+const deleteProduct = async (dProduct) => {
+    const response = await axios.post(apiProductsUrl, dProduct);
+    return response.data;
+}
+
 export {
     getAllProducts,
-    createProduct
+    createProduct,
+    updateProduct,
+    deleteProduct
 }

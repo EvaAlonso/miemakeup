@@ -1,0 +1,18 @@
+.nav-container{
+  width: 50%;
+  .nav-makeup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    list-style: none;
+    li{
+      text-decoration: none;
+      .menu-navlink{
+        text-decoration: none;
+        color: white;
+      }
+    }
+    
+  }
+}
