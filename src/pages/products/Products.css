@@ -1,14 +1,19 @@
 .container-products{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 50px;
-  column-gap: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
   margin: 10px;
- 
+ gap: 100px;
   
 
 }
 .product-image {
   width: 200px;
   height: 300px;
+}
+.description{
+  line-break: normal;
+  width: 300px;
 }

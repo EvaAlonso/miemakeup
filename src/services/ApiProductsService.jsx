@@ -17,16 +17,14 @@ const updateProduct = async (id, newProduct) => {
     return response.data;
 }
 
-/* const deleteProduct = async (id) => {
-    const response = await axios.delete(apiProductsUrl);
-    return ( response.data.products.filter((product) => {
-        return product.id !== id;
-      }));
-} */
+const getProductById = async (id) => {
+    const response = await axios.get(apiProductsUrl + id);
+    return ( response.data);
+}
 
 export {
     getAllProducts,
     createProduct,
-    updateProduct
-    /* deleteProduct */
+    updateProduct,
+    getProductById
 }

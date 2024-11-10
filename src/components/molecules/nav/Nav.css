@@ -28,3 +28,15 @@
 #navbar a.active{
   color: var(--blue);
 }
+.search{
+  border-radius: 10px;
+  border: 5px solid var(--blue);
+  width: 150px;
+  padding: 12px;
+
+}
+.search:hover,
+.search:focus {
+  background-color: var(--soft-blue);
+  color: white;
+}

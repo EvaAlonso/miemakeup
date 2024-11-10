@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { getAllProducts } from "../../services/ApiProductsService";
+import { getAllProducts, getProductById } from "../../services/ApiProductsService";
 import { Link } from "react-router-dom";
 import trash from "../../assets/papelera.png";
 import pencil from "../../assets/editar.png";
@@ -20,7 +20,17 @@ const Products = () => {
 
   useEffect(() => {
       getAllProductsFromApiService()
+      
   }, [])
+
+  const deleteProduct = (id)=> {
+    fetch("http://localhost:3000/products/" + id, {
+      method: "DELETE"
+    })
+      .then((response)=>response.json()
+      .then((data)=>getAllProductsFromApiService())
+    )
+  }
 
   return (
     <>
@@ -32,9 +42,9 @@ const Products = () => {
                 {
                     products.map((product) => (
                       <div key={product.id}>
-                      <Link to={`/delete-product`}>
-                      <button ><img src={trash} alt="icono papelera"  /></button>
-                      </Link>
+                      
+                      <button onClick={()=>deleteProduct(product.id)}><img src={trash} alt="icono papelera"  /></button>
+                      
                       <Link to={`/update-product`} >
                       <img src={pencil} alt="icono editar" />
                       </Link>
@@ -42,7 +52,7 @@ const Products = () => {
                             <h3>{product.title}</h3>
                             <img src={product.imageUrl} alt="" width="300" className="product-img"/>
                             <p>{product.price}</p>
-                            <p>{product.description}</p>
+                            <p className="description">{product.description}</p>
                             
                             
                         </div>
