@@ -1,0 +1,14 @@
+.container-products{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 100px;
+  margin: 10px;
+ 
+  
+
+}
+.product-image {
+  width: 200px;
+  height: 300px;
+}

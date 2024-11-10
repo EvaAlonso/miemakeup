@@ -5,12 +5,16 @@ import Products from "../pages/products/Products";
 import CreateProduct from "../pages/createProduct/CreateProduct";
 import NotFound from "../pages/notFound/NotFound";
 import Home from "../pages/home/Home";
-import Categories from "../pages/categories/Categories";
+import Catergories from "../pages/catergories/Catergories";
 import Face from "../pages/face/Face";
 import Eyes from "../pages/eyes/Eyes";
 import Lips from "../pages/lips/Lips";
 import Skincare from "../pages/skincare/Skincare";
 import UpdateProduct from "../pages/updateProduct/UpdateProduct";
+import MyAccount from "../pages/myAccount/MyAccount";
+import MyOrders from "../pages/myOrders/MyOrders";
+import SigIn from "../pages/sigIn/SigIn";
+import DeleteProduct from "../pages/deleteProduct/DeleteProduct";
 
 export const router = createBrowserRouter([
   {
@@ -23,40 +27,56 @@ export const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: "/products",
+        path: "products",
         element: <Products/>,
         
       },
       {
-        path: "/create-product",
+        path: "create-product",
         element: <CreateProduct/>,
       },
       {
-        path: "/update-product/",
+        path: "update-product",
         element: <UpdateProduct/>,
       },
       {
-        path: "/contact",
+        path: "delete-product",
+        element: <DeleteProduct/>,
+      },
+      {
+        path: "contact",
         element: <Contact/>,
       },
       {
-        path: "/categories",
-        element: <Categories/>,
+        path: "my-orders",
+        element: <MyOrders/>,
+      },
+      {
+        path: "my-account",
+        element: <MyAccount/>,
+      },
+      {
+        path: "sigin",
+        element: <SigIn/>,
+      },
+      {
+        path: "catergories",
+        element: <Catergories/>,
         children: [
           {
-            path: "categories/face",
+            path: "catergories/face",
             element: <Face/>
           },
           {
-            path: "categories/eyes",
+            path: "eyes",
             element: <Eyes/>
           },
           {
-            path: "categories/lips",
+            path: "catergories/lips",
             element: <Lips/>
           },
           {
-            path: "categories/skincare",
+            path: "catergories/skincare",
             element: <Skincare/>
           },
         ]

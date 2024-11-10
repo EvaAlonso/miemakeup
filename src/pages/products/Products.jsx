@@ -1,24 +1,26 @@
 
 import { useEffect, useState } from "react";
-import { deleteProduct, getAllProducts } from "../../services/ApiProductsService";
+import { getAllProducts } from "../../services/ApiProductsService";
 import { Link } from "react-router-dom";
 import trash from "../../assets/papelera.png";
 import pencil from "../../assets/editar.png";
+import "./Products.css";
+
+
+
 
 const Products = () => {
 
   const [products, setProducts] = useState([]);
 
-  const getAllProductsFromService = async () => {
-    const response = await getAllProducts();
-    setProducts(response);
+  const getAllProductsFromApiService = async () => {
+      const products = await getAllProducts();
+      setProducts(products)
   }
 
-  useEffect(()=>{
-
-    getAllProductsFromService();
-
-  }, []);
+  useEffect(() => {
+      getAllProductsFromApiService()
+  }, [])
 
   return (
     <>
@@ -30,15 +32,15 @@ const Products = () => {
                 {
                     products.map((product) => (
                       <div key={product.id}>
-                      <Link to={"/delete-product"} onClick={deleteProduct} >
-                      <img src={trash} alt="icono papelera" />
+                      <Link to={`/delete-product`}>
+                      <button ><img src={trash} alt="icono papelera"  /></button>
                       </Link>
-                      <Link to={`/update-product/${product.id}`} >
+                      <Link to={`/update-product`} >
                       <img src={pencil} alt="icono editar" />
                       </Link>
                         <div className="container-product" >
                             <h3>{product.title}</h3>
-                            <img src={product.imageUrl} alt="" width="300"/>
+                            <img src={product.imageUrl} alt="" width="300" className="product-img"/>
                             <p>{product.price}</p>
                             <p>{product.description}</p>
                             
@@ -52,5 +54,6 @@ const Products = () => {
     </>
   )
 }
+
 
 export default Products

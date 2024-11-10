@@ -12,19 +12,21 @@ const createProduct = async (newProduct) => {
     return response.data;
 }
 
-const updateProduct = async (uProduct) => {
-    const response = await axios.post(apiProductsUrl, uProduct);
+const updateProduct = async (id, newProduct) => {
+    const response = await axios.put(`${apiProductsUrl}/${id}`, newProduct);
     return response.data;
 }
 
-const deleteProduct = async (dProduct) => {
-    const response = await axios.post(apiProductsUrl, dProduct);
-    return response.data;
-}
+/* const deleteProduct = async (id) => {
+    const response = await axios.delete(apiProductsUrl);
+    return ( response.data.products.filter((product) => {
+        return product.id !== id;
+      }));
+} */
 
 export {
     getAllProducts,
     createProduct,
-    updateProduct,
-    deleteProduct
+    updateProduct
+    /* deleteProduct */
 }

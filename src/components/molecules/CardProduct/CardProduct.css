@@ -1,0 +1,70 @@
+.img-cardProduct{
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit:contain;
+  align-items: start;
+}
+.title{
+  font-size: 24px;
+}
+.icon{
+  width: 28px;
+  height: 28px;
+}
+.car-section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.car-number{
+  font-size: 48px;
+}
+.card-section{
+  width: 400px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 50px;
+}
+.card-section:hover,
+.card-section:focus{
+  background-color: var(--soft-blue);
+}
+.star-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.star {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.star-gray {
+  background-image: url(../../../assets/icons8-estrella-32.png);
+}
+
+.star-pink {
+  background-image: url(../../../assets/estrella-azul.png);
+}
+.add-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  color: white;
+  width: 300px;
+  border-radius: 5px;
+  height: 50px;
+}
+details summary::marker{
+  content: "⮞ ";
+  color: var(--blue);
+}
