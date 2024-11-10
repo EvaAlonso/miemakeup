@@ -24,12 +24,12 @@ const CardProduct = ({ title, imageUrl, price, description }) => {
     <section className="card-section">
 
       <h2 className="title">{title}</h2>
-      <figure>
+      <figure className="figure">
         <img src={imageUrl} alt={title} className="img-cardProduct" />
       </figure>
       <p className="add-title">Añadir al carrito 🛒</p>
       <section className="car-section">
-        <p>{price} €</p>
+        <p className="price">{price} €</p>
         <img src={menos} alt="símbolo de menos" className="icon" onClick={() =>setCount(count - 1)} />
         <span id="car-number">{count}</span>
         <img src={mas} alt="símbolo de más" className="icon" onClick={() =>setCount(count + 1)} />
@@ -41,8 +41,8 @@ const CardProduct = ({ title, imageUrl, price, description }) => {
         <div className="star star-gray"></div>
         <div className="star star-gray"></div>
       </section>
-      <details>
-        <summary>Descripción</summary>
+      <details className="details">
+        <summary className="summary">Descripción</summary>
         <p>{description}</p>
       </details>
     </section>

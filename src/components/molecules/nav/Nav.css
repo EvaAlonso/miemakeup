@@ -1,21 +1,23 @@
 .nav-container{
-  width: 70%;
+  width: 60%;
   display: flex;
-  justify-content: space-between;
+ justify-content: space-between;
   align-items: center;
+  
 }
 .nav-makeup{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+ 
   padding: 10px;
   list-style: none;
+  gap: 50px;
   
 }
 .nav-user{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  gap: 50px;
   padding: 10px;
   list-style: none;
   color: white;
@@ -31,7 +33,7 @@
 .search{
   border-radius: 10px;
   border: 5px solid var(--blue);
-  width: 150px;
+  width: 200px;
   padding: 12px;
 
 }

@@ -14,7 +14,7 @@ import UpdateProduct from "../pages/updateProduct/UpdateProduct";
 import MyAccount from "../pages/myAccount/MyAccount";
 import MyOrders from "../pages/myOrders/MyOrders";
 import SigIn from "../pages/sigIn/SigIn";
-import DeleteProduct from "../pages/deleteProduct/DeleteProduct";
+
 
 export const router = createBrowserRouter([
   {
@@ -38,10 +38,6 @@ export const router = createBrowserRouter([
       {
         path: "update-product",
         element: <UpdateProduct/>,
-      },
-      {
-        path: "delete-product",
-        element: <DeleteProduct/>,
       },
       {
         path: "contact",

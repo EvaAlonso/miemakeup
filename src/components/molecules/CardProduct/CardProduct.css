@@ -1,12 +1,19 @@
+.figure {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  align-items: start;
+}
 .img-cardProduct{
   width: 300px;
   height: 400px;
   border-radius: 10px;
   object-fit:contain;
-  align-items: start;
+  position: absolute;
+  top: 0;
 }
 .title{
-  font-size: 24px;
+  font-size: 20px;
 }
 .icon{
   width: 28px;
@@ -18,11 +25,10 @@
   gap: 10px;
 }
 .car-number{
-  font-size: 48px;
+  font-size: 54px;
 }
 .card-section{
   width: 400px;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,9 +40,11 @@
   background-color: var(--soft-blue);
 }
 .star-container {
+  width: 300px;
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  justify-content: space-evenly;
+  gap: 10px;
 }
 
 .star {
@@ -67,4 +75,14 @@
 details summary::marker{
   content: "⮞ ";
   color: var(--blue);
+}
+.details{
+  width: 300px;
+  margin-block-start: 10px;
+  margin-inline-start: 50px;
+  word-wrap: break-word;
+}
+.price{
+  font-size: 24px;
+  font-weight: 600;
 }

@@ -76,6 +76,13 @@
       "description": "Sombra en crema con shimmer en tono azul",
       "price": "16",
       "imageUrl": "./src/assets/sombra-azul3.jpg"
+    },
+    {
+      "id": "cdbe",
+      "title": "lsllslsl",
+      "description": "lalalal",
+      "price": "20",
+      "imageUrl": ""
     }
   ]
 }

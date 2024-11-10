@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { getAllProducts, getProductById } from "../../services/ApiProductsService";
+import { getAllProducts} from "../../services/ApiProductsService";
 import { Link } from "react-router-dom";
 import trash from "../../assets/papelera.png";
 import pencil from "../../assets/editar.png";
@@ -31,7 +31,10 @@ const Products = () => {
       .then((data)=>getAllProductsFromApiService())
     )
   }
-
+  const setProduct = (product) => {
+    console.log("productos:" ,product);
+    localStorage.setItem("producto", product)
+  }
   return (
     <>
       <Link to={"/create-product"}>
@@ -45,8 +48,11 @@ const Products = () => {
                       
                       <button onClick={()=>deleteProduct(product.id)}><img src={trash} alt="icono papelera"  /></button>
                       
-                      <Link to={`/update-product`} >
-                      <img src={pencil} alt="icono editar" />
+                      <Link to={"/update-product"} >
+                      
+                      <img src={pencil} alt="icono editar" onClick={()=>setProduct(product)}/>
+
+                      
                       </Link>
                         <div className="container-product" >
                             <h3>{product.title}</h3>
