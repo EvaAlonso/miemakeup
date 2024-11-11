@@ -6,9 +6,6 @@ import trash from "../../assets/papelera.png";
 import pencil from "../../assets/editar.png";
 import "./Products.css";
 
-
-
-
 const Products = () => {
 
   const [products, setProducts] = useState([]);
@@ -31,10 +28,7 @@ const Products = () => {
       .then((data)=>getAllProductsFromApiService())
     )
   }
-  const setProduct = (product) => {
-    console.log("productos:" ,product);
-    localStorage.setItem("producto", product)
-  }
+  
   return (
     <>
       <Link to={"/create-product"}>
@@ -48,9 +42,9 @@ const Products = () => {
                       
                       <button onClick={()=>deleteProduct(product.id)}><img src={trash} alt="icono papelera"  /></button>
                       
-                      <Link to={"/update-product"} >
+                      <Link to={`/update-product/${product.id}`} >
                       
-                      <img src={pencil} alt="icono editar" onClick={()=>setProduct(product)}/>
+                      <img src={pencil} alt="icono editar" onClick={()=>product.id}/>
 
                       
                       </Link>

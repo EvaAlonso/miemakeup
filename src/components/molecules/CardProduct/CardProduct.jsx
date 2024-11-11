@@ -4,6 +4,7 @@ import mas from "../../../assets/mas-azul.png";
 import menos from "../../../assets/menos-azul.png";
 import "./CardProduct.css";
 
+
 const CardProduct = ({ title, imageUrl, price, description }) => {
 
   const [count, setCount] = useState(0)
@@ -35,11 +36,13 @@ const CardProduct = ({ title, imageUrl, price, description }) => {
         <img src={mas} alt="símbolo de más" className="icon" onClick={() =>setCount(count + 1)} />
       </section>
       <section className="star-container">
-        <div className="star star-gray"></div>
-        <div className="star star-gray"></div>
-        <div className="star star-gray"></div>
-        <div className="star star-gray"></div>
-        <div className="star star-gray"></div>
+      
+      <div className="star star-gray"></div>
+      <div className="star star-gray"></div>
+      <div className="star star-gray"></div>
+      <div className="star star-gray"></div>
+      <div className="star star-gray"></div>
+    
       </section>
       <details className="details">
         <summary className="summary">Descripción</summary>

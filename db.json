@@ -4,7 +4,7 @@
       "id": "1",
       "title": "Base de Maquillaje Bourjois",
       "description": "Healthy Mix con vitaminas C, E y B5. Cobertura media, modulable con efecto radiante y larga duración. Especial pieles maduras ",
-      "price": 15,
+      "price": "9",
       "imageUrl": "./src/assets/base-bourjois.jpg"
     },
     {
