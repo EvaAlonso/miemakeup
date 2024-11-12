@@ -23,7 +23,7 @@ const CreateProduct = () => {
         }
 
         await createProduct(porductoNuevo);
-        navigate("/")
+        navigate("/");
     }
 
     return (
@@ -59,6 +59,7 @@ const CreateProduct = () => {
                     value={urlImagen}
                     onChange={(event) => setUrlImagen(event.target.value)}
                 />
+                
             </div>
             <button type="submit">Añadir Producto</button>
             <Link to={"/"}><button>Cancelar</button></Link>

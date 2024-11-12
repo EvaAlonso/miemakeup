@@ -1,0 +1,44 @@
+.nav-container{
+  width: 60%;
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  
+}
+.nav-makeup{
+  display: flex;
+  flex-direction: row;
+ 
+  padding: 10px;
+  list-style: none;
+  gap: 50px;
+  
+}
+.nav-user{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 10px;
+  list-style: none;
+  color: white;
+  
+}
+.menu-navlink{
+  text-decoration: none;
+  color: white;
+}
+#navbar a.active{
+  color: var(--blue);
+}
+.search{
+  border-radius: 10px;
+  border: 5px solid var(--blue);
+  width: 200px;
+  padding: 12px;
+
+}
+.search:hover,
+.search:focus {
+  background-color: var(--soft-blue);
+  color: white;
+}

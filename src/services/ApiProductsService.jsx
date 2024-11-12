@@ -12,7 +12,19 @@ const createProduct = async (newProduct) => {
     return response.data;
 }
 
+const updateProduct = async (id, editProduct) => {
+    const response = await axios.put(`${apiProductsUrl}/${id}`, editProduct);
+    return response.data;
+}
+
+/* const getProductById = async (id) => {
+    const response = await axios.get(apiProductsUrl + id);
+    return ( response.data);
+} */
+
 export {
     getAllProducts,
-    createProduct
+    createProduct,
+    updateProduct,
+    /* getProductById */
 }

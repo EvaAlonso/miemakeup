@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  .link{
+    text-decoration: none;
+    color: white;
+  }
+}
+.search-icon{
+  width: 24px;
+  height: 24px;
+}

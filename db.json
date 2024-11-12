@@ -2,59 +2,87 @@
   "products": [
     {
       "id": "1",
-      "title": "Atum....",
-      "description": "parafo......",
-      "price": 15,
-      "imageUrl": "https://picsum.photos/200/300"
+      "title": "Base de Maquillaje Bourjois",
+      "description": "Healthy Mix con vitaminas C, E y B5. Cobertura media, modulable con efecto radiante y larga duración. Especial pieles maduras ",
+      "price": "9",
+      "imageUrl": "./src/assets/base-bourjois.jpg"
     },
     {
       "id": "2",
-      "title": "Chocolate....",
-      "description": "parafo......",
+      "title": "Base de Maquillaje L'Oreal",
+      "description": "Accord parfait nude, base tipo serum con color y un 1% de ácido hialurónico, de cobertura baja, modulable. Especial pieles maduras ",
       "price": 30,
-      "imageUrl": "https://picsum.photos/200/300"
+      "imageUrl": "./src/assets/base-loreal.jpg"
     },
     {
       "id": "3",
-      "title": "Leche....",
-      "description": "parafo......",
+      "title": "Contorno en crema de Kiko",
+      "description": "Contorno en crema con subtono frío para poder contornear el rostro, modulable. Ideal para pieles maduras",
       "price": 30,
-      "imageUrl": "https://picsum.photos/200/300"
+      "imageUrl": "./src/assets/broncer-kiko.jpg"
     },
     {
       "id": "4",
-      "title": "Lejia....",
-      "description": "parafo......",
+      "title": "Colorete en crema Catrice",
+      "description": "Liquid Blush de Catrice, modulable ideal para pieles maduras ",
       "price": 30,
-      "imageUrl": "https://picsum.photos/200/300"
+      "imageUrl": "./src/assets/colorete-crema-catrice.jpg"
     },
     {
       "id": "218f",
-      "title": "uva",
-      "description": "soy una uva",
-      "price": "3",
-      "imageUrl": "https://picsum.photos/200/300"
+      "title": "Colorete en crema Kiko Milano",
+      "description": "Colorete multiuso, sirve para colorete, labios u ojos. Úsalo como quieras. ",
+      "price": "20",
+      "imageUrl": "./src/assets/colorete-crema-kiko.jpg"
     },
     {
       "id": "e9c7",
-      "title": "fresa",
-      "description": "soy una fresa",
+      "title": "Colorete en crema Corazona",
+      "description": "Blush in, Multi-stick que podrás usar de colorete, para labios u ojos.",
       "price": "2",
-      "imageUrl": "https://picsum.photos/200/30"
+      "imageUrl": "./src/assets/colorete-crema-maquillalia.jpg"
     },
     {
       "id": "ab4e",
-      "title": "manzana",
-      "description": "soy una manzana",
+      "title": "Prebase iluminadora Technic",
+      "description": "Esta prebase multiuso la podrás usar antes de tu base para darle un efecto jugoso, o usarlo al final de tu maquillaje como brillo",
       "price": "5",
-      "imageUrl": "https://picsum.photos/200/30"
+      "imageUrl": "./src/assets/iluminador-liquido-tecnic.jpg"
     },
     {
       "id": "e5e0",
-      "title": "zanahoria",
-      "description": "soy una zanahoria",
+      "title": "Iluminador líquido de Catrice",
+      "description": "Esta prebase multiuso la podrás usar antes de tu base para darle un efecto jugoso, o usarlo al final de tu maquillaje como brillo",
       "price": "5",
-      "imageUrl": "https://picsum.photos/200/300"
+      "imageUrl": "./src/assets/iluminador-liquido-catrice.jpg"
+    },
+    {
+      "id": "7281",
+      "title": "Paleta sombras Planetas",
+      "description": "Preciosa paleta de sombras inspirada en los planetas del sistema solar, con colores mates, con glitter y metálicos. Destacan la sombra dorada como el sol y la sobra tipo topper inspirada en la luna",
+      "price": "10",
+      "imageUrl": "./src/assets/paleta-mercadona2.jpg"
+    },
+    {
+      "id": "936b",
+      "title": "Paleta de maquillaje Corazona",
+      "description": "Paleta con sombras en polvo, metálicas y brillo",
+      "price": "25",
+      "imageUrl": "./src/assets/paleta-corazona.jpg"
+    },
+    {
+      "id": "e477",
+      "title": "Sombra en crema Kiko Milano",
+      "description": "Sombra en crema con shimmer en tono azul",
+      "price": "16",
+      "imageUrl": "./src/assets/sombra-azul3.jpg"
+    },
+    {
+      "id": "cdbe",
+      "title": "lsllslsl",
+      "description": "lalalal",
+      "price": "20",
+      "imageUrl": ""
     }
   ]
 }
